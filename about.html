@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>industrial plant about</title>
+</head>
+<style>
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+        background-color:#001f3f;
+        top:0;
+        padding: 0 !important;
+        border: none !important;
+        position: relative;
+        }
+        html,body{
+            margin: 0 !important;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        #main-title{
+            text-align: center;
+            width:100%;
+        position:sticky !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    z-index: 1000;
+            padding: 15px 10px 18px 10px;
+            border-bottom:2px solid blue;
+            background-color: #001f3f;
+            
+
+            }
+            #main-title ul{
+                list-style: none;
+                margin-top: 10px;
+                justify-content:flex-end;
+                gap: 50px;
+                padding:0;
+                display:flex;
+                
+            }
+            #main-title a{
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                padding:6px 12px;
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.1); 
+                display: inline-block; 
+    
+            }
+            #main-title p{
+                
+                font-size: 30px;
+                font-weight: bold;
+                letter-spacing: 0.5px ;
+                line-height: 1.3;
+                color:#00e5ff;
+                margin: 0 !important;
+            }
+            #main-title a:hover{
+                color:blue;
+                background-color: white;
+            }
+            .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+
+    .hero {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      color: #94a3b8;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 24px auto;
+    }
+
+    
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn {
+      width: 100%;
+      max-width: 280px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.2s;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+    }
+    .btn-secondary {
+      background-color: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover {
+      background-color: #334155;
+    }
+
+    
+    .section-padding {
+      padding: 40px 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2563eb;
+    }
+    .stat-label {
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    
+    footer {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 50px 0;
+    }
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+      background-color: #1e293b;
+      color: #ffffff;
+      font-size: 0.95rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #94a3b8;
+    }
+
+  
+    @media (min-width: 768px) {
+      .hero {
+        padding: 80px 20px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+      }
+      .hero p {
+        font-size: 1.125rem;
+      }
+
+      
+      .btn-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .btn {
+        width: auto;
+      }
+
+     
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+   
+      .grid-2col {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+    }
+             @media(max-width:768px){
+        
+    #main-title{
+            text-align: center;
+            width:100%;
+            border-bottom:2px solid blue;
+            padding:5px;
+            max-width:100%;
+            height: auto;
+            
+
+            }
+            #main-title ul{
+                list-style: none;
+                margin-top: 10px;
+                justify-content:flex-end;
+                gap:15px;
+                display:flex;
+                flex-wrap: wrap;
+                
+                
+            }
+            #main-title a{
+                text-decoration: none;
+                color:white;
+                font-size:14px;
+                padding:4px 8px;
+                background-color: rgba(255, 255, 255, 0.1); 
+                display: inline-block;
+        
+            }
+            #main-title p{
+                
+                font-size:18px;
+                
+                margin: 0 !important;
+                
+            }
+            #main-title a:hover{
+                color:blue;
+                background-color: white;
+            }}
+              @media (max-width: 500px) {
+        #main-title {
+            text-align: center;
+            width:100%;
+            border-bottom:2px solid blue;
+            padding:5px;
+            max-width:100%;
+            height: auto;
+            margin:0;
+        }
+
+        #main-title p {
+            font-size:12px;
+            line-height:1.3;
+            word-break: break-word;  
+        text-align: center;
+        padding: 0 10px;
+  
+        
+            margin:0 !important;
+        }
+
+        #main-title ul {
+            margin-top: 12px;
+            justify-content:flex-end;
+            gap: 10px;
+            flex-wrap: wrap;
+            display:flex;
+        }
+
+        #main-title a {
+            
+            
+            background-color: rgba(255, 255, 255, 0.1); 
+            color:white;
+            display: inline-block;
+        font-size: 12px;
+        padding: 6px 10px;
+        
+        }
+            #main-title a:hover{
+                color:blue;
+                background-color: white;
+                
+        }}
+            </style>
+<body>
+     <div id="main-title">
+    <p> MARUTI SUZUKI INDIA LIMITED-INDUSTRIAL PLANT STUDY</p>
+    
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+    </ul>
+    </div>
+    
+
+    
+    <header class="hero">
+    <div class="container">
+      <h1>About Our Project</h1>
+      <p>Building high-performance, sustainable industrial operations designed for long-term growth and technical excellence.</p>
+
+      <div class="btn-group">
+        <a href="#contact" class="btn btn-primary">Contact Operations</a>
+        <a href="spec-sheet.pdf" download="Spec_Sheet.pdf" class="btn btn-secondary">Download Spec Sheet</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="container section-padding">
+
+    
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">450K</div>
+        <div class="stat-label">Total Sq. Ft. Area</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">ISO Certified</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2026</div>
+        <div class="stat-label">Launch Readiness</div>
+      </div>
+    </section>
+
+    
+    <section class="grid-2col">
+      <div class="card">
+        <h2>Who We Are</h2>
+        <p>We focus on engineering reliable, practical, and scalable solutions for modern industrial facilities. Our operational workflows prioritize safety, precision, and continuous optimization.</p>
+      </div>
+
+      <div class="card">
+        <h2>Core Capabilities</h2>
+        <p>Equipped with advanced automated systems, direct freight logistics connections, and sustainable energy infrastructure to handle heavy-duty production requirements.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h2>Get in Touch</h2>
+          <p style="color: #94a3b8; margin-top: 10px;">Reach out directly to our operations desk for site inquiries, technical specs, or vendor partnerships.</p>
+        </div>
+
+        <form action="/submit" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer; width: 100%; max-width: none;">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

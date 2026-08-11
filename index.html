@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page industrial plant</title>
+</head>
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+      background-color:#001f3f;
+      top:0;
+      padding: 0 !important;
+      border: none !important;
+      position: relative;
+    }
+    html,body{
+        margin: 0 !important;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    #main-title{
+        text-align: center;
+        width:100%;
+      position:sticky !important;
+  top: 0 !important;
+  margin-top: 0 !important;
+  z-index: 1000;
+        padding: 15px 10px 18px 10px;
+        border-bottom:2px solid blue;
+        background-color: #001f3f;
+        
+
+        }
+        #main-title ul{
+            list-style: none;
+            margin-top: 10px;
+            justify-content:flex-end;
+            gap: 50px;
+            padding:0;
+            display:flex;
+            
+         }
+          #main-title a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding:6px 12px;
+            border-radius: 4px;
+             background-color: rgba(255, 255, 255, 0.1); 
+             display: inline-block; 
+   
+          }
+           #main-title p{
+          
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 0.5px ;
+            line-height: 1.3;
+            color:#00e5ff;
+            margin: 0 !important;
+           }
+          #main-title a:hover{
+            color:blue;
+            background-color: white;
+          }
+          #hero-section{
+            text-align:center;
+            padding:20px;
+            background-color:white;
+            border:2px solid ghostwhite;
+            color:black;
+            line-height:1.5;
+            width:100%;
+           max-width:400px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            height: auto;
+            transition: all 0.3s ease-in-out;
+          }
+         
+          #hero-section h3{
+              color:#0056b3;
+              font-size:33px;
+              margin-bottom: 10px;
+          }
+          #hero-section p{
+            font-size:20px;
+           color: #333333;
+            
+          }
+          #hero{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+           padding-top: 30px; 
+  padding-left: 15px;
+  padding-right: 15px;
+            padding:0 15px;
+            padding:  30px !important;;
+            margin-top: 0;
+            
+          }
+           #hero-section:hover{
+           transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+           }
+           #highlights{
+            color:white;
+            padding:20px 30px;
+            line-height:1.6;
+            
+           }
+             #highlights h3{
+              
+              padding:10px 15px;
+              text-align: center;
+              font-size: 33px;
+             }
+             #highlights ul {
+      padding-left: 20px; 
+      font-size: 25px;
+    }
+    #highlights p{
+      color:#00e5ff;
+    }
+
+    #highlights li {
+      margin-bottom: 8px;
+      color:#d1d5db;
+    }
+    #highlights li:hover{
+      color:white;
+      cursor: pointer;
+    }
+    #main-shop{
+
+    line-height: 1.6;
+    padding:20px 30px;
+  
+    }
+     #main-shop h3{
+      
+      font-size:33px;
+      text-align: center;
+      padding:10px 15px;
+     }
+     #main-shop ul{
+      color:#d1d5db;
+      font-size: 25px;
+      padding-left: 20px;
+     }
+     #main-shop p{
+      color:#00e5ff;
+     
+     }
+     #main-shop ul li:hover{
+      color:white;
+      cursor: pointer;
+      
+     }
+     #quality{
+padding:20px 30px;
+line-height: 1.6;
+     }
+     #quality h3{ 
+      font-size:33px;
+      text-align: center;
+      padding:10px 10px;
+    }
+    #highlights h3,
+#main-shop h3,
+#quality h3 {
+  color: #f1c40f;
+}
+  #quality p{
+    color:#00e5ff;
+  }
+  #quality ul{
+    color:#d1d5db;
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  #quality ul:hover{
+    color:white;
+    cursor: pointer;
+  }
+@media(max-width:768px){
+    
+#main-title{
+        text-align: center;
+        width:100%;
+        border-bottom:2px solid blue;
+        padding:5px;
+        max-width:100%;
+        height: auto;
+        
+
+        }
+        #main-title ul{
+            list-style: none;
+            margin-top: 10px;
+            justify-content:flex-end;
+            gap:15px;
+            display:flex;
+            flex-wrap: wrap;
+            
+            
+         }
+          #main-title a{
+            text-decoration: none;
+            
+            font-size:14px;
+            padding:4px 8px;
+             background-color: rgba(255, 255, 255, 0.1); 
+             display: inline-block;
+    
+          }
+           #main-title p{
+            
+            font-size:18px;
+            
+            margin: 0 !important;
+            
+           }
+          #main-title a:hover{
+            color:blue;
+            background-color: white;
+          }
+
+      #hero{
+        display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 30px !important
+      }
+
+ #hero-section{
+            text-align:center;
+            padding:15px;
+            background-color:white;
+            border:2px solid ghostwhite;
+            color:black;
+            line-height:1.5;
+            
+            width:100%;
+          
+            height: auto;
+            font-size: 20px;
+          }
+          #hero-section h3{
+              
+              font-size:25px;
+              text-align: center;
+          }
+          #hero-section p
+          {
+            font-size:15px;
+          }
+   #highlights{
+            color:white;
+            padding:20px 30px;
+            line-height:1.4;
+            
+           }
+             #highlights h3{
+            
+              padding:8px 8px;
+               font-size:25px;
+             }
+              #highlights ul {
+        padding-left: 18px;
+        font-size:20px;
+            }
+            #main-shop{
+   padding:20px 30px;
+    line-height: 1.5;
+    }
+     #main-shop h3{
+    
+      font-size:25px;
+      text-align: center;
+      padding:8px 8px;
+     }
+     #main-shop ul{
+  
+      font-size:20px;
+      padding-left: 18px;
+      
+     }
+    
+     #quality{
+padding: 20px 30px;
+line-height: 1.5;
+     }
+     #quality h3{ 
+      font-size:25px;
+      text-align: center;
+      padding:8px 8px;
+    }
+ 
+  #quality ul{
+    
+    font-size:20px;
+    padding-left: 18px;
+  }
+          
+          }
+
+  @media (max-width: 500px) {
+      #main-title {
+        text-align: center;
+        width:100%;
+        border-bottom:2px solid blue;
+        padding:5px;
+        max-width:100%;
+        height: auto;
+        margin:0;
+      }
+
+      #main-title p {
+        font-size:12px;
+        line-height:1.3;
+        word-break: break-word;  
+    text-align: center;
+    padding: 0 10px;
+
+    
+        margin:0 !important;
+      }
+
+      #main-title ul {
+        margin-top: 12px;
+        justify-content:flex-end;
+        gap: 10px;
+        flex-wrap: wrap;
+        display:flex;
+      }
+
+      #main-title a {
+        
+        
+        background-color: rgba(255, 255, 255, 0.1); 
+        color:white;
+        display: inline-block;
+    font-size: 12px;
+    padding: 6px 10px;
+     
+      }
+        #main-title a:hover{
+            color:blue;
+            background-color: white;
+            
+    }
+    #hero{
+        display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          
+            padding-top: 25px !important;
+      }
+      
+
+ #hero-section{
+            text-align:center;
+            padding:20px;
+            background-color:white;
+            border:2px solid ghostwhite;
+            color:black;
+            line-height:1.2;
+            width:100%;
+            
+            
+          }
+          #hero-section h3{
+              
+              font-size:18px;
+          }
+          #hero-section p
+          {
+            font-size:13px;
+          }
+         #highlights{
+        
+            padding:15px 15px;
+            line-height:1.3;
+            margin-top:20px;
+           }
+             #highlights h3{
+            
+              padding:10px 10px;
+              text-align: center;
+                font-size:18px;
+             }
+            #highlights ul {
+        
+        font-size:18px;
+      }
+      #main-shop{
+   padding:15px 15px;
+    line-height: 1.3;
+    }
+     #main-shop h3{
+      
+      font-size:18px;
+      text-align: center;
+      padding:10px 10px;
+     }
+     #main-shop ul{
+    
+      font-size:18px;
+     }
+     
+     #quality{
+padding:15px 15px;
+line-height: 1.3;
+     }
+     #quality h3{ 
+      font-size:18px;
+      text-align: center;
+      padding:10px 10px;
+    }
+ 
+  #quality ul{
+    
+    font-size:18px;
+  }
+    }
+  </style>
+  <body>
+
+   <div id="main-title">
+  <p> MARUTI SUZUKI INDIA LIMITED-INDUSTRIAL PLANT STUDY</p>
+  
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+</ul>
+   </div>
+   <div id="hero">
+   <div id="hero-section">
+    <h3>Automotive Engineering & Industry 5.0</h3>
+    <p>Maruti Suzuki india Limited operation one of the largest passanger car manufacturing ecosystems in Asia. The project highlights the core industrial,operations across key plant location in Gurugram,IMT Manesar ,and Hasalpur (Gujrat).</p>
+   </div></div>
+   <div id="highlights">
+    <h3> Key Plant Highlights & Production Stats<hr></h3>
+     <ul>
+      <li><p>Annual Capacity:</p> 2 million Vehicles per Year</li>
+      <li><p>Plant Location:</p> (Haryana) ,IMT Manesar (Haryana), Hansalpur (Gujrat), IMT Kharkhoda (Haryana)</li>
+      <li><p>Manufacturing Speed:</p> 1 Car Manufactured Every 12 seconds</li>
+      <li><p>Plant Operational Status:</p> Functional & Optimized</li>
+     </ul>
+   </div>
+   <div id="main-shop">
+    <div id="section-a">
+      <h3>Press & Stamping Shop<hr></h3>
+      <ul>
+        <li>
+         <p> Function:</p> Stamping raw sheet metal into structure vehicle panels.
+        </li>
+        <li>
+        <p> Key Tech: </p> high-speed hydraulic press lines.
+        </li>
+        <li>
+         <p> Output:</p> Car door, bonnets, roof panels, and structure chassis components.
+        </li>
+      </ul>
+    </div>
+    <div id="section-b">
+      <h3>Robotic Weld Shop<hr></h3>
+      <ul>
+        <li>
+          <p>Function:</p> Joining stamped metal parts together to build the car body shell(Body-in-white).
+        </li>
+        <li>
+         <p> Key Tech:</p> High-density robotic spot welding and automated inspection sensors.
+        </li>
+        <li>
+          <p>Output:</p> Completed structural body shell.
+        </li>
+      </ul>
+    </div>
+    <div id="section-c">
+    <h3>Paint Shop<hr></h3>
+      <ul>
+        <li>
+         <p> Function:</p> Multi-stage protective coating and automated body painting.
+        </li>
+        <li>
+         <p> Key Tech:</p> Cathodic Electro Deposition (CED) anti-rust coating and robotic spray arms.
+        </li>
+        <li>
+          <p>Output:</p> Corrosion-resistant,finished painted body.
+        </li>
+      </ul>
+      </div>
+      <div id="secton-d">
+    <h3>Powertrain-& final Assembly Line <hr></h3>
+      <ul>
+        <li>
+         <p>Function:</p> Installing the engine,transmission,dashboard,glass,wheels and interior.
+        </li>
+        <li>
+         <p> Key Tech: </p> overhead conveyor belts and automated torque tools.
+        </li>
+        <li>
+         <p> Output:</p> assembeld vehicle ready for quality inspection.
+        </li>
+      </ul>
+      </div>
+   </div>
+   <div id="quality">
+    <h3>Industrial Quality & Lean Principles Used<hr></h3>
+    <ul>
+      <li><P>5S System:</p> Workplace organization (Sort,Set in order, Shine,Standarize,Sustain).</li>
+    
+    <li><p>Kaizen:</p> Continuous small operational improvements suggested by plant workers.</li>
+    <li><p>Poka-Yoka:</p> Error-proofing techniques integrated into assembely line machines.</li>
+    <li><p>Shower & Tracking Testing:</p>Every finished car undergoes water-leak tests and track performance checks before dispatch.</li>
+  </ul>
+  </div>
+   
+   
+</body>
+</html>
